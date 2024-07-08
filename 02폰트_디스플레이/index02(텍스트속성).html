@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p{
+        text-align: right;
+        letter-spacing: -2px; /*글자 간격*/
+        border: 1px solid black;
+
+    }
+    div{
+        border: 1px solid blue;
+    }
+    div > img {
+        vertical-align: top; /*기준이 되는 태그에 지정함*/
+    }
+    /* 기준이 되는 태그가 없을 때 수직 정렬은? */
+    /* line-height와 높이를 동일하게 맞춘다 */
+    .box{
+        heigh:100px;
+        line-height: 100px;
+        text-align: center;
+
+    }
+    a {
+        text-decoration :none;
+        color: black;
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+    <p>hello world</p>
+
+    <div>
+        hi world
+        <img src="img/css3.png" alt="제목">
+    </div>
+
+    <div class="box">
+        hello world
+
+    </div>
+
+    <a href="https://www.naver.com">a링크는 데코레이션을 가지고 있다.</a>
+
+
+</body>
+</html>

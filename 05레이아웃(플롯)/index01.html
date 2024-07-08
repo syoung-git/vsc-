@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .box{
+            border: 1px solid red;
+            width: 400px;
+            /* overflow: hidden; */
+        }
+        .box:after {
+            content: ""; display: block; clear: both;
+        }
+        .box > li {
+            /* float하면, 부모가 자식을 감싸지 못하는 현상때문에 
+                --가상요소: after{ content: ""; diaplay: block; clear: both; }
+                --overflow: hidden
+                부모에 둘 중 택 1 반드시 지정 */
+            float: left;
+            width: 20%;
+        }
+        /* ------------------------------------------------------------------- */
+        
+        .wrap{
+            margin: 0 auto;
+            border: 1px solid #777;
+            width: 500px;
+            overflow: hidden;
+        }
+        .wrap > .item {
+            float: right;
+            width: 33.3333%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul class="box">
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+    
+    <div class="wrap">
+        <div class="item">박스1</div>
+        <div class="item">박스2</div>
+        <div class="item">박스3</div>
+    </div>
+
+
+</body>
+</html>

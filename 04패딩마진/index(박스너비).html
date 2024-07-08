@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px solid #777;
+            /* min-height: 500px; */
+            /* min-width: 500px; 박스 최소 너비 고정 */
+
+            max-height: 500px; /*500이상 커지지 않는다. 499이하부터는 가변됨.*/
+            max-width: 500px;
+        }
+        .box{
+            border: 1px solid #777;
+            padding: 0 20px;
+            width: 100px;
+            height: 100px;
+            /* box-sizing: content-box; 기본값 - 크기의 결정을 (컨텐츠 + 패딩 + 보더) (width+padding) 로 한다. */
+            box-sizing: border-box; /*박스 크기 결정을 패딩, 보더를 포함시키셔서 너비를 결정 (width=패딩+보더)*/
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hello world<br>
+        Hello world<br>
+        Hello world<br>
+        Hello world<br>
+        Hello world<br>
+        Hello world<br>
+        
+    </p>
+
+    <div class="box">
+        박스-사이징 속성
+    </div>
+</body>
+</html>

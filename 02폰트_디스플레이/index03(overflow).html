@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text-box {
+            border: 1px solid grey;
+            height: 100px;
+            width: 300px;
+            overflow: visible; /*기본값*/
+            overflow: scroll;
+            overflow: hidden; /*넘치는 영역을 숨긴다.*/
+            overflow: auto; /*넘칠때만 스크롤 생성*/
+        }
+
+        .table-box{
+            border: 1px solid grey;
+            height: 100px;
+            width:300px;
+            overflow-x: auto; /*x축으로 스크롤을 자동으로 만듦*/
+            white-space: nowrap; /*가로 줄바꿈을 하지 않겠다*/
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <p class="text-box">
+        Slo-mo
+        Hey I see you looking at me and
+        I like it oh yeah
+        No more
+        다가오길 기다리는 건
+        Not my option yeah
+        피어나 My desire
+        원하는 건 가져야 하는 걸
+        All I want is love love wit' you
+        Stop thinkin' 거부할 수 없을걸
+        Hey listen to me now
+        A you're gonna B my babe
+        Everytime you C me
+        빠져 Deeper deeper babe
+        Hey listen to me now
+        ABCD 반복해
+    </p>
+
+    <div class="table-box">
+        <table border="1">
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

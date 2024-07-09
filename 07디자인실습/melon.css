@@ -20,7 +20,7 @@
 .top-right > ul > li > a > span.m1 {
     /*span.m1 - span태그인데 클래스명이 m1*/
     display: block;
-    background-image: url(img/melon.png);
+    background-image: url(img/head_menu_201014.png);
     background-repeat: no-repeat;
     background-position: 0 -60px;
     width: 75px;
@@ -78,22 +78,101 @@ header .bottom > .right{float: right;}
     color: #00d344;
 }
 
+/* ======본문====== */
+.section .wrap {
+    width: 1008px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.wrap .content{overflow: hidden;}
+.wrap .content .list-wrap {
+    float: left;
+    width: 480px;
+}
+.wrap .content .slide-wrap {
+    float: left;
+    width: 236px;
+    margin-left: 4px;
+}
+.wrap .content .user-wrap {
+    float: left;
+    width: 280px;
+    margin-left: 8px;
+}
 
 
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {
+    float: left;
+    width: 33.3333%;
+
+}
+
+.list-wrap ul li > a {display: inline-block; position: relative;}
+.list-wrap ul li > a > .singer {
+    position: absolute; 
+    left:0; bottom: 4px;
+    width: 100%;
+    background-color: rgb(0,0,0,0.7);
+    height: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+}
+.list-wrap ul li {
+    position:relative;
+}
+.list-wrap ul li .hover-content {
+    position: absolute;
+    left: 0; top: 0;
+    width: 156px; height: 156px;
+    background-color: rgb(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.list-wrap ul li .hover-content > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+}
+.list-wrap ul li:hover > .hover-content {
+    opacity: 1;
+    /* li에 마우스가 닿으면 > .hover-content 투명도 1 */
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.login-wrap {
+    border: 1px solid #e0e0e0;
+    background-color: #fbfbfb;
+    height: 115px;
+    padding: 0 20px;
+}
+.login-wrap .top {
+    overflow: hidden; 
+    font-size: 11px; 
+    color: #939393;
+    margin-top: 30px;
+}
+.login-wrap .top > .left {float: left;}
+.login-wrap .top > .right {float: right;}
+.login-wrap > button {
+    /* 버튼디자인 */
+    width: 100%;
+    background-color: #00d344;
+    border: none;
+    color: white;
+    font-weight: 600;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.user-wrap > .promotion-wrap {
+    margin-top: 10px;
+}
 
 
 

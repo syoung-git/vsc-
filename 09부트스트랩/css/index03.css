@@ -1,0 +1,128 @@
+#header{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.my-header {
+    background-color: #263238;
+    border-color: #304047;
+    border-radius: 0;
+    margin: 0;
+}
+/* 메뉴호버 */
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #304047;
+}
+/* 드롭다운 메뉴 active시 */
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: #304047;
+}
+
+.my-logo {
+    padding: 5px 10px;
+}
+
+/* =======슬라이드======= */
+#my-slide {
+    margin-top: 52px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+/* =======섹션======= */
+.prod-list {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+.prod-wrap {
+    padding: 5px;
+    position: relative;
+}
+.prod-link {
+    border: 1px solid #e3e3e3;
+    display: block;
+}
+.prod-wrap .arrow {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+    color: white;
+}
+.prod-wrap .hover {
+    opacity: 0;
+    background-color: #337ab7;
+}
+.prod-link:hover {
+    border-color: #337ab7;
+}
+.prod-link:hover > .arrow { /*arrow는 안보이게*/
+    opacity: 0;
+}
+.prod-link:hover > span.hover {/*arrow hover는 보이게*/
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ===========블로그 스타일 상품============ */
+@media(min-width:768px){
+    .blog-style.col-sm-2 {
+        width: 20%;
+    }
+}
+.blog-style {
+    margin-bottom: 20px;
+}
+.blog-inner {
+    border: 1px solid#e3e3e3;
+    position: relative;
+}
+.blog-inner > img {
+    text-align: center;
+}
+.blog-content {
+    padding: 10px;
+}
+.blog-content > p {
+    height: 30px;
+    white-space: nowrap; /*한줄로 처리*/
+    text-overflow: ellipsis; /*넘치는 영역이 있으면 ...으로 처리*/
+    overflow: hidden;
+}
+.blog-price {overflow: hidden;}
+.blog-price > ul {float: left;}
+.blog-price > strong {float: right;}
+.blog-price > ul > li {
+    display: inline-block;
+}
+.blog-price > ul > li > i {
+    color: yellow;
+}
+
+.blog-hover {
+    position: absolute;
+    background-color: rgb(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    opacity: 0;
+}
+.blog-hover > a {
+    color: white;
+}
+.blog-inner:hover > .blog-hover {
+    opacity: 1;
+}
+
